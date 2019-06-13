@@ -1,0 +1,157 @@
+<!--index.wxml-->
+<view class='main'>
+  <view class='search'>
+    <navigator>
+      <view class='searchmain'>
+        <view class='searchicon'>
+          <icon color='#b2b2b2' size='30rpx' type='search'></icon>
+        </view>
+        <view class='searchtext'>
+          <text>{{searchtext}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class='hotswiper'>
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='goods-classify'>
+    <view class='classify-list' wx:for="{{classlist}}" wx:key="{{index}}">
+      <navigator url=''>
+        <image src='{{item.imgsrc}}'></image>
+        <view class='classify-text'>
+          <text>{{item.text}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class='mainbgcline'></view>
+  <view class='mainpage'>
+    <view class='hotrecommend'>
+      <view class='recommendtext'>
+        {{recommendtext}}
+      </view>
+      <view class='recommendbig'>
+        <navigator>
+          <image src='/images/index/image1.png'></image>
+          <view class='fffline'></view>
+          <view class='goodsdetail'>
+            <view class='goodsname'>
+              <text>55'小米电视4C</text>
+            </view>
+            <view class='goodsspecial'>
+              <text>时尚多彩/细节出众/价格实惠</text>
+            </view>
+            <view class='goodsprice'>
+              <text>￥2399</text>
+            </view>
+
+          </view>
+          <view class='fffline'></view>
+        </navigator>
+      </view>
+      <view class='recommendgoods'>
+        <view class='forrow1' wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
+          <view class='bgcline'></view>
+          <view class='goodsrow'>
+            <view class='goods-cell goodsdiv'>
+              <navigator>
+                <view class='goods-img'>
+                  <image src='{{item.url1}}'></image>
+                </view>
+                <view class='goodsdetail'>
+                  <view class='goodsname'>
+                    <text>{{item.goodsname1}}</text>
+                  </view>
+                  <view class='goodsspecial'>
+                    <text>{{item.goodsspecial1}}</text>
+                  </view>
+                  <view class='goodsprice'>
+                    <text>{{item.goodsprice1}}</text>
+                  </view>
+                </view>
+              </navigator>
+            </view>
+            <view class='goods-cell goodsdiv goodsright'>
+              <navigator>
+                <view class='goods-img'>
+                  <image src='{{item.url2}}'></image>
+                </view>
+                <view class='goodsdetail'>
+                  <view class='goodsname'>
+                    <text>{{item.goodsname2}}</text>
+                  </view>
+                  <view class='goodsspecial'>
+                    <text>{{item.goodsspecial2}}</text>
+                  </view>
+                  <view class='goodsprice'>
+                    <text>{{item.goodsprice2}}</text>
+                  </view>
+                </view>
+              </navigator>
+            </view>
+          </view>
+        </view>
+        <view class='bgcline'></view>
+        <view class='title1'>
+          <text>{{title1}}</text>
+        </view>
+        <view class='bgcline'></view>
+        <view class='goodslike'>
+          <view class='recommendgoods'>
+          <view class='forrow2' wx:for="{{forrecmdgoods2}}" wx:key="{{index}}">
+            <view class='goodsrow' >
+              <view class='goods-cell goodsdiv'>
+                <navigator>
+                  <view class='goods-img'>
+                    <image src='{{item.url1}}'></image>
+                  </view>
+                  <view class='goodsdetail'>
+                    <view class='goodsname'>
+                      <text>{{item.goodsname1}}</text>
+                    </view>
+                    <view class='goodsspecial'>
+                      <text>{{item.goodsspecial1}}</text>
+                    </view>
+                    <view class='goodsprice'>
+                      <text>{{item.goodsprice1}}</text>
+                    </view>
+                  </view>
+                </navigator>
+              </view>
+              <view class='goods-cell goodsdiv goodsright'>
+                <navigator>
+                  <view class='goods-img'>
+                    <image src='{{item.url2}}'></image>
+                  </view>
+                  <view class='goodsdetail'>
+                    <view class='goodsname'>
+                      <text>{{item.goodsname2}}</text>
+                    </view>
+                    <view class='goodsspecial'>
+                      <text>{{item.goodsspecial2}}</text>
+                    </view>
+                    <view class='goodsprice'>
+                      <text>{{item.goodsprice2}}</text>
+                    </view>
+                  </view>
+                </navigator>
+              </view>
+            </view>
+            <view class='bgcline'></view>
+            </view>
+          </view>
+          
+        </view>
+      </view>
+    </view>
+    <view class='mainbgcline'></view>
+
+  </view>
+</view>
