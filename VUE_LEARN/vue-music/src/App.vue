@@ -17,6 +17,7 @@
     <v-play></v-play>
     <!-- sidebar -->
     <v-sidebar></v-sidebar>
+    <v-search-box></v-search-box>
   </div>
 </template>
 
@@ -31,7 +32,8 @@ export default {
     'v-header': header,
     'v-tab': tab,
     'v-sidebar': sidebar,
-    'v-play':play
+    'v-play':play,
+    'v-search-box': searchBox
   }
 }
 </script>

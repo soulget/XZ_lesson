@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "tittle": "今天我这边也在下雨，好巧哦",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "name": "xz",
+      "age": 20,
+      "id": 2
+    },
+    {
+      "name": "xz",
+      "age": 20,
+      "id": 3
+    },
+    {
+      "body": "雨一直下QAQ",
+      "postId": "2",
+      "id": 4
+    },
+    {
+      "body": "雨一直下QWQ",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
