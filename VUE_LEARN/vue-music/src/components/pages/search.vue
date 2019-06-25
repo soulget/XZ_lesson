@@ -8,7 +8,11 @@
 </template>
 
 <script>
+import searchBox from '@/components/searchBox'
 export default {
+  components: {
+    'v-search-box': searchBox
+  },
 
 }
 </script>

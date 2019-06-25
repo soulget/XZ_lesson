@@ -9,15 +9,18 @@
       </router-link>
     </v-header>
     <!-- tab -->
-    <v-tab></v-tab>
+    <v-tab>
+    </v-tab>
     <keep-alive>
-      <router-view></router-view>
+        
+      <router-view>
+     
+      </router-view>
     </keep-alive>
     <!-- play -->
     <v-play></v-play>
     <!-- sidebar -->
     <v-sidebar></v-sidebar>
-    <v-search-box></v-search-box>
   </div>
 </template>
 
@@ -33,7 +36,6 @@ export default {
     'v-tab': tab,
     'v-sidebar': sidebar,
     'v-play':play,
-    'v-search-box': searchBox
   }
 }
 </script>
