@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 关于call  bind  apply -->
+  <script>
+    var a = {
+      user:'蜗牛',
+      fn:function (n, m) {
+        console.log(this.user)
+        console.log(n + m)
+      }
+    }
+    var b = a.fn
+    var c = b.bind(a,7)
+    c(1,2)
+    // b.call(a,5)
+    // b.apply(a,[10])
+    // b.bind(a,[10,1])()  //----101
+    // b.bind(a,10,1)()    //---11
+    // b.bind(a,10)(1)     //---11
+    // b.bind(a)(10,1)     //---11
+    // a.fn();
+  </script>
+</body>
+</html>
