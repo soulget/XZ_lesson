@@ -36,3 +36,7 @@
       Set  indexof   includes  map   reduce
 
 # q6.   防抖节流函数原理
+
+# q7.   __proto__  和 prototype  关联
+      __proto__ 是每一个实例都有的属性，可以访问 [prototype] 属性，
+      实例的 __proto__ 与其构造函数的 prototype 指向的是同一个对象  （wn.__proto__ === Student.prototype）
