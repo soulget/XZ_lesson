@@ -61,3 +61,4 @@ console.log(cat.name)
 console.log(cat.sleep())
 console.log(cat instanceof Cat)   //true
 console.log(cat instanceof Animal) //false
+

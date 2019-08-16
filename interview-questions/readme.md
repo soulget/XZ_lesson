@@ -41,6 +41,10 @@
       __proto__ 是每一个实例都有的属性，可以访问 [prototype] 属性，
       实例的 __proto__ 与其构造函数的 prototype 指向的是同一个对象  （wn.__proto__ === Student.prototype）
 
+# q8. 事件委托
+
+# q9. defineProperty
+
 # q10.  get 和  post   请求在缓存方面的区别(defineProperty)
       get 请求类似于查找的过程，用户获取数据可以，可以不用每次都与数据库连接，所以可以使用缓存
       post 不同， post 一般做的是修改和删除数据的工作，所以必须与数据库交互，所以不能使用缓存，因此get请求更适合于请求缓存
@@ -67,11 +71,13 @@
 
 # q14. js中的各种位置
       clientHeight: 表示可视区域的高度，不包含border 和 滚动条
-      offsetHeight: 表示可视区域的高度，包含border 和滚动条
+      offsetHeight: 表示可视区域的高度，包含border 和滚动条 
       scrollHeight: 表示所有区域的高度，包含因为滚动被隐藏的部分
       clientTop: 表示边框border的厚度，在未指定的情况下一般为0
       scrollTop: 表示滚动后被隐藏的高度
 # q15. js拖拽功能的实现
+
+# q16. 继承
 
 # q17. click在ios手机上有300ms的延迟，原因及解决方法
 
