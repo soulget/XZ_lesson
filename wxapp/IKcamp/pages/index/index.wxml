@@ -1,0 +1,21 @@
+<view class="wrapper">
+	<view class="group" wx:for-item="group" wx:for="{{ articleList }}" wx:key="index">
+		{{ group.date }}
+		<view class="group-content">
+			<view
+			 class="group-content-item {{ item.hasVisited ? 'visited' : '' }}"
+			 wx:for="{{ group.articles }}"
+			 data-item="{{ item }}"
+			 bind:tap="showDetail" wx:key="index"
+			>
+        <view class="group-content-item-desc"
+        data-item="{{ item }}"
+        >
+					{{ item.title }}
+				</view>
+				<image class="group-content-item-img" src="{{ item.cover }}" />
+			</view>
+		</view>
+	</view>
+</view>
+
