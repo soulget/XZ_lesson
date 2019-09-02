@@ -1,0 +1,11 @@
+{
+  "name": "decorator",
+  "version": "1.0.0",
+  "description": "1. 发布订阅\r  Event-bus\r <!-- 订阅 -->\r  event.on('click');\r  event.on('receiveData');\r <!-- 发布 -->\r  event.emit('click')",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "author": "",
+  "license": "ISC"
+}

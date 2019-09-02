@@ -4,6 +4,7 @@ const Recommend = () => import('@/views/Recommend')
 const Movie = () => import('@/views/Movie')
 const Search = () => import('@/views/Search')
 const Rank = () => import ('@/views/Rank')
+import Category from '@/views/Category'
 
 Vue.use(Router)
 
@@ -24,10 +25,16 @@ export default new Router({
       component:Movie
     },
     {
+      path: '/category',
+      name: 'category',
+      component: Category
+    },
+    {
       path:'/search',
       name:'Search',
       component:Search
     },
+  
     {
       path:'/rank',
       name:'Rank',

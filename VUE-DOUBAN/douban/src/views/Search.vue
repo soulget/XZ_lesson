@@ -13,7 +13,7 @@
       <div v-if="searchHistory.length" class="history-wrap">
         <div class="title">
           <span>搜索历史</span>
-          <i class="iconfont icon-clear"/>
+          <i class="iconfont icon_clear"/>
         </div>
         <div v-for="item in searchHistory" :key="item" class="item"> 
           <i class="iconfont icon-history"/>
